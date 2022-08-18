@@ -1,14 +1,14 @@
 @font-face {
   font-family: "beon";
-  src: url(../fonts/beon.ttf);
+  src: url(beon.ttf);
 }
 @font-face {
   font-family: "multicolor";
-  src: url(../fonts/multicolor.otf);
+  src: url(multicolor.otf);
 }
 @font-face {
   font-family: "courier new";
-  src: url(../fonts/Courier-New.ttf);
+  src: url(Courier-New.ttf);
 }
 body {
   margin: 0;
