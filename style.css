@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "beon";
+  src: url(../fonts/beon.ttf);
+}
+@font-face {
+  font-family: "multicolor";
+  src: url(../fonts/multicolor.otf);
+}
+@font-face {
+  font-family: "courier new";
+  src: url(../fonts/Courier-New.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* background-image: url("../img/bg-03.jpg"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+body nav {
+  box-shadow: 0 -5px 15px 5px #0000008e !important;
+  /* background-image: url("../img/bg-03.jpg"); */
+  background-size: cover;
+  border-radius: 0.25em;
+  background-image: linear-gradient(45deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background-size: 200%;
+  animation: animateborder 3s ease infinite;
+}
+body nav .nav-link {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+}
+body nav .img-logo {
+  width: 40px;
+}
+body nav .dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body nav .dropdown-item .img-lang {
+  width: 25px;
+}
+body .bg-name {
+  width: 40vw;
+  height: 20vw;
+  /* background: #000000d7; */
+  margin: 10vw auto;
+  /* box-shadow: 0 0 150px 5px #e23e4e; */
+}
+@media screen and (max-width: 768px) {
+  body .bg-name {
+    width: 80vw;
+    height: 30vw;
+  }
+}
+body .bg-name h1 {
+  text-align: center;
+  font-size: 100px;
+  font-family: beon;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  text-shadow: 0 0 100px #fff;
+}
+body .bg-name h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: multicolor;
+  color: #9e9e9e;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 27%;
+  top: 55%;
+}
+body .col {
+  margin: 5% auto;
+  padding: 0;
+}
+body .col .my-card {
+  margin-bottom: 100px;
+  border: none;
+  z-index: 100;
+  padding: 1em 2em;
+  color: #fff;
+  border-radius: 0.125em;
+  box-sizing: content-box;
+  background-color: #343a40 !important;
+}
+body .col .my-card::after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: -0.15em;
+  left: -0.15em;
+  width: calc(100% + .3em);
+  height: calc(100% + .3em);
+  border-radius: 0.25em;
+  background-image: linear-gradient(45deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background-size: 200%;
+  animation: animateborder 3s ease infinite;
+}
+
+body .col .my-card h1 {
+  text-align: center;
+  font-family: beon;
+  font-size: 550%;
+  padding: 20% 0 0;
+  margin: 0 auto;
+  width: 80%;
+}
+body .col .my-card h2 {
+  text-align: center;
+  padding: 0 5% 20%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+body .row-col-me {
+  margin: 0;
+  width: auto;
+}
+body .row-col-me .row-img-me {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+}
+body .row-text-me {
+  color: #000;
+  width: 100%;
+  margin: 0;
+  font-family: "courier new";
+  padding: 10px;
+}
+body .card {
+  background-color: #343a40;
+  color: #fff;
+  margin: 0 1vw;
+  box-shadow: 0 0 5px 1px #eee;
+}
+@media screen and (min-width: 768px) {
+  body .card {
+    flex: 2 0 0%;
+  }
+}
+body .card a {
+  color: #fff;
+}
+body .card-text {
+  font-family: "courier new";
+}
+.btn-port {
+  border-radius: 0.25em;
+  background-image: linear-gradient(45deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background-size: 200%;
+  animation: animateborder 3s ease infinite;
+}
+body footer {
+  width: 100%;
+  /* background-color: #343a40; */
+  box-shadow: 0 0 15px 5px #000;
+  margin-top: 5vw;
+  border-radius: 0.25em;
+  background-image: linear-gradient(45deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background-size: 200%;
+  animation: animateborder 3s ease infinite;
+}
+body footer ul {
+  width: 45vw;
+  margin: 0 auto;
+  padding: 5vw 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+/* Animations */
+
+@keyframes animateborder {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
